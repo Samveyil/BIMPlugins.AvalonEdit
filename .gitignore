@@ -1,0 +1,7 @@
+# The AvalonEdit sources build.ps1 clones, and what it builds.
+.work/
+artifacts/
+bin/
+obj/
+.vs/
+*.user

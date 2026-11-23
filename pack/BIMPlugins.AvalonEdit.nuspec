@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>BIMPlugins.AvalonEdit</id>
+    <version>$version$</version>
+    <title>BIMPlugins.AvalonEdit</title>
+    <authors>Samir Shibliev, AvalonEdit contributors</authors>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/Samveyil/BIMPlugins.AvalonEdit</projectUrl>
+    <readme>README.md</readme>
+    <icon>icon.png</icon>
+    <description>AvalonEdit for Revit add-ins, under an assembly name of its own: it never clashes with another add-in's AvalonEdit.</description>
+    <releaseNotes>https://github.com/Samveyil/BIMPlugins.AvalonEdit/blob/master/CHANGELOG.md</releaseNotes>
+    <copyright>Copyright © 2026 Samir Shibliev. AvalonEdit © AvalonEdit contributors.</copyright>
+    <tags>revit wpf xaml avalonedit text-editor code-editor bim</tags>
+    <repository type="git" url="https://github.com/Samveyil/BIMPlugins.AvalonEdit" commit="$commit$" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.2" />
+      <group targetFramework="net8.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="$output$\net462\BIMPlugins.AvalonEdit.dll" target="lib\net462" />
+    <file src="$output$\net462\BIMPlugins.AvalonEdit.xml" target="lib\net462" />
+    <file src="$output$\net8.0-windows\BIMPlugins.AvalonEdit.dll" target="lib\net8.0-windows7.0" />
+    <file src="$output$\net8.0-windows\BIMPlugins.AvalonEdit.xml" target="lib\net8.0-windows7.0" />
+    <file src="..\README.md" target="" />
+    <file src="icon.png" target="" />
+    <file src="..\LICENSE.txt" target="" />
+  </files>
+</package>
